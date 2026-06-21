@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>INGUAN™ — Transição do simples para o excelente | African Systems. Global Precision.</title>
+<meta name="description" content="Agência digital moçambicana. Desenvolvemos sistemas digitais offline-first, com M-Pesa e e-Mola integrados, para pequenos e médios negócios em Moçambique e no PALOP.">
+<meta name="keywords" content="INGUAN, sistemas digitais Moçambique, M-Pesa, e-Mola, transformação digital, agência digital Maputo, gestão de negócio, PALOP">
+<meta name="author" content="INGUAN">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://inguan-tech.github.io/Inguan.official/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="INGUAN™ — Transição do simples para o excelente">
+<meta property="og:description" content="Sistemas digitais construídos de raiz para negócios em Moçambique e PALOP. Offline-first. M-Pesa e e-Mola integrados.">
+<meta property="og:url" content="https://inguan-tech.github.io/Inguan.official/">
+<meta property="og:site_name" content="INGUAN">
+<meta property="og:locale" content="pt_MZ">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="INGUAN™ — African Systems. Global Precision.">
+<meta name="twitter:description" content="Agência digital moçambicana. Sistemas offline-first com M-Pesa e e-Mola integrados.">
+
+<!-- Schema.org Local Business -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "INGUAN",
+  "alternateName": "INGUAN™ African Systems. Global Precision.",
+  "description": "Agência digital moçambicana especializada em sistemas digitais offline-first com integração M-Pesa e e-Mola para pequenos e médios negócios em Moçambique e PALOP.",
+  "url": "https://inguan-tech.github.io/Inguan.official/",
+  "email": "inguanofficial@gmail.com",
+  "telephone": "+258867247092",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Maputo",
+    "addressCountry": "MZ"
+  },
+  "areaServed": ["Moçambique", "Angola", "Cabo Verde", "Guiné-Bissau", "São Tomé e Príncipe"],
+  "sameAs": ["https://www.instagram.com/inguan.io"]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+/* ════════════════════════════════════════════════════════
+   DESIGN TOKENS — preservados exactamente do layout aprovado
+   ════════════════════════════════════════════════════════ */
+:root{
+  --black:#0A0A0A;
+  --dark:#111108;
+  --surface:#17170E;
+  --card:#1C1C12;
+  --gold:#FFD700;
+  --gold-soft:#E8C547;
+  --gold-dim:#B8960C;
+  --gold-pale:#2A2200;
+  --cream:#E8E0C8;
+  --muted-dark:#8C8870;
+  --dimmer:#54503C;
+
+  --white:#FFFFFF;
+  --light:#FAFAF7;
+  --ink:#16160F;
+  --ink-soft:#3A3A2E;
+  --muted-light:#6B6B5C;
+  --line-light:#E5E2D6;
+
+  --purple:#9B59B6;
+  --green:#27AE60;
+  --pink:#E1306C;
+  --mpesa:#E2231A;
+  --emola:#0072CE;
+  --whatsapp:#25D366;
+
+  --ff-display:'Inter',sans-serif;
+  --ff-mono:'Courier New',monospace;
+
+  --r:14px;
+  --r-sm:8px;
+  --max:1140px;
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation-duration:0.01ms !important;transition-duration:0.01ms !important}}
+body{font-family:var(--ff-display);background:var(--black);color:var(--cream);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
+.container{max-width:var(--max);margin:0 auto;padding:0 24px}
+section{position:relative}
+
+/* section background variants */
+.bg-light{background:var(--light);color:var(--ink)}
+.bg-dark{background:var(--black);color:var(--cream)}
+.bg-surface{background:var(--surface);color:var(--cream)}
+
+/* ── reveal-on-scroll ─────────────────────── */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal.in{opacity:1;transform:translateY(0)}
+.reveal-l{opacity:0;transform:translateX(-28px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal-l.in{opacity:1;transform:translateX(0)}
+.reveal-r{opacity:0;transform:translateX(28px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal-r.in{opacity:1;transform:translateX(0)}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}.d4{transition-delay:.32s}
+
+/* ── eyebrow / tags ───────────────────────── */
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:var(--ff-mono);font-size:11px;letter-spacing:3px;text-transform:uppercase;font-weight:700}
+.eyebrow.on-dark{color:var(--gold-dim)}
+.eyebrow.on-light{color:var(--gold-dim)}
+.eyebrow::before{content:'';width:18px;height:1.5px;background:currentColor}
+
+/* ── buttons ──────────────────────────────── */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 30px;border-radius:var(--r-sm);font-size:14.5px;font-weight:700;letter-spacing:.2px;transition:transform .3s var(--ease),box-shadow .3s var(--ease),background .3s var(--ease)}
+.btn-gold{background:var(--gold);color:var(--black)}
+.btn-gold:hover{transform:translateY(-2px) scale(1.02);box-shadow:0 12px 32px rgba(255,215,0,.3)}
+.btn-outline-dark{border:1.5px solid rgba(255,215,0,.35);color:var(--cream)}
+.btn-outline-dark:hover{border-color:var(--gold);background:rgba(255,215,0,.06);transform:translateY(-2px)}
+.btn-outline-light{border:1.5px solid var(--gold-dim);color:var(--ink)}
+.btn-outline-light:hover{background:var(--gold-pale);border-color:var(--gold);color:var(--ink)}
+.btn-wa{background:var(--whatsapp);color:#fff}
+.btn-wa:hover{transform:translateY(-2px) scale(1.02);box-shadow:0 12px 32px rgba(37,211,102,.35)}
+.btn svg{flex-shrink:0}
+.btn-block{width:100%}
+
+/* ════════════════════════════════════════════
+   NAV
+   ════════════════════════════════════════════ */
+#nav{position:fixed;top:0;left:0;right:0;z-index:1000;transition:background .4s var(--ease),backdrop-filter .4s var(--ease),border-color .4s var(--ease);border-bottom:1px solid transparent}
+#nav.scrolled{background:rgba(10,10,10,.85);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border-color:rgba(255,215,0,.12)}
+.nav-row{display:flex;align-items:center;justify-content:space-between;height:76px;gap:20px}
+.nav-brand{display:flex;align-items:center;gap:12px}
+.nav-mark{width:42px;height:42px;border-radius:9px;background:linear-gradient(135deg,#2b2410,#0d0d06);border:1.5px solid var(--gold);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.nav-mark::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,transparent 40%,rgba(255,215,0,.25));}
+.nav-mark svg{position:relative;z-index:1}
+.nav-wordmark{font-weight:900;font-size:18px;letter-spacing:1px;color:var(--cream)}
+.nav-tagline{display:flex;align-items:center;gap:10px;font-family:var(--ff-mono);font-size:11.5px;letter-spacing:2.5px;color:var(--muted-dark);text-transform:uppercase}
+.nav-tagline b{color:var(--gold);font-weight:700}
+.nav-burger{display:none;flex-direction:column;gap:5px;padding:10px;z-index:1001}
+.nav-burger span{width:22px;height:2px;background:var(--cream);border-radius:2px;transition:transform .3s var(--ease),opacity .3s var(--ease)}
+.nav-burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-burger.open span:nth-child(2){opacity:0}
+.nav-burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-panel{position:fixed;inset:0;background:var(--black);z-index:999;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:28px;transform:translateY(-100%);transition:transform .45s var(--ease);padding:24px}
+.mobile-panel.open{transform:translateY(0)}
+.mobile-panel a{font-size:15px;letter-spacing:1.5px;text-transform:uppercase;color:var(--cream);font-family:var(--ff-mono)}
+
+/* ════════════════════════════════════════════
+   HERO
+   ════════════════════════════════════════════ */
+#hero{min-height:100vh;display:flex;align-items:center;padding:120px 0 70px;position:relative;overflow:hidden;background:radial-gradient(ellipse 90% 70% at 75% 30%,rgba(184,150,12,.10) 0%,transparent 60%),var(--black)}
+.hero-particles{position:absolute;inset:0;pointer-events:none;z-index:0}
+.particle{position:absolute;width:3px;height:3px;border-radius:50%;background:var(--gold);opacity:0;animation:rise linear infinite}
+@keyframes rise{0%{opacity:0;transform:translateY(0) scale(.5)}10%{opacity:.7}90%{opacity:.3}100%{opacity:0;transform:translateY(-420px) scale(1.2)}}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,215,0,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,215,0,.02) 1px,transparent 1px);background-size:64px 64px;pointer-events:none}
+.hero-row{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr 1fr;gap:50px;align-items:center}
+.hero-headline{font-size:clamp(36px,5.4vw,58px);font-weight:900;line-height:1.06;letter-spacing:-1.2px;color:var(--white);margin:22px 0 18px}
+.hero-headline .gold{color:var(--gold)}
+.hero-sub{font-size:clamp(15px,1.8vw,17.5px);color:var(--muted-dark);max-width:480px;line-height:1.75;margin-bottom:32px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px}
+
+/* hero visual — chart + africa */
+.hero-visual{position:relative;height:380px}
+.hero-visual svg{width:100%;height:100%}
+.chart-line{stroke-dasharray:600;stroke-dashoffset:600;animation:draw 2.2s var(--ease) .3s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.chart-bar{transform-origin:bottom;animation:growbar 1s var(--ease) both}
+@keyframes growbar{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+.chart-arrow{opacity:0;animation:fadeup 1s var(--ease) 1.8s forwards}
+@keyframes fadeup{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+.africa-dots circle{animation:twinkle 3s ease-in-out infinite}
+@keyframes twinkle{0%,100%{opacity:.25}50%{opacity:.7}}
+
+/* ════════════════════════════════════════════
+   QUEM SOMOS
+   ════════════════════════════════════════════ */
+#quem-somos{padding:96px 0}
+.qs-row{display:grid;grid-template-columns:140px 1fr;gap:40px;align-items:flex-start}
+.qs-icon{width:120px;height:120px;border-radius:18px;background:linear-gradient(145deg,var(--black),#1c1808);border:1.5px solid var(--gold-dim);display:flex;align-items:center;justify-content:center;box-shadow:0 16px 40px rgba(0,0,0,.18)}
+.qs-title{font-size:clamp(24px,3vw,32px);font-weight:800;color:var(--ink);margin-bottom:14px}
+.qs-body{font-size:15.5px;color:var(--ink-soft);line-height:1.8;max-width:680px}
+.qs-body+.qs-body{margin-top:14px}
+.qs-highlight{display:inline-block;margin-top:18px;font-weight:700;color:var(--gold-dim);font-size:15.5px;border-bottom:2px solid var(--gold);padding-bottom:2px}
+
+/* ════════════════════════════════════════════
+   O QUE FAZEMOS
+   ════════════════════════════════════════════ */
+#o-que-fazemos{padding:96px 0;background:var(--black)}
+.owf-head{margin-bottom:40px;max-width:640px}
+.owf-head h2{font-size:clamp(26px,3.4vw,36px);font-weight:800;color:var(--white);margin:14px 0 10px}
+.owf-head p{color:var(--muted-dark);font-size:15px;line-height:1.7}
+.owf-head .sub{color:var(--gold);font-weight:700;font-size:14.5px;margin-top:14px}
+.owf-head .sub2{color:var(--cream);font-size:13.5px;margin-top:6px;opacity:.85}
+.owf-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.owf-card{background:var(--surface);border:1.5px solid rgba(255,215,0,.22);border-radius:var(--r);padding:32px;transition:transform .35s var(--ease),box-shadow .35s var(--ease),border-color .35s var(--ease);position:relative;overflow:hidden}
+.owf-card::before{content:'';position:absolute;top:-1px;left:-1px;right:-1px;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0;transition:opacity .35s}
+.owf-card:hover{transform:translateY(-6px);border-color:var(--gold);box-shadow:0 24px 60px rgba(255,215,0,.08)}
+.owf-card:hover::before{opacity:1}
+.owf-icon{width:54px;height:54px;border-radius:12px;background:var(--gold-pale);border:1px solid rgba(255,215,0,.3);display:flex;align-items:center;justify-content:center;color:var(--gold);margin-bottom:20px;transition:transform .35s var(--ease)}
+.owf-card:hover .owf-icon{transform:scale(1.08) rotate(-4deg)}
+.owf-card h3{color:var(--gold);font-size:17px;font-weight:700;margin-bottom:14px}
+.owf-card p{color:var(--muted-dark);font-size:14px;line-height:1.7;margin-bottom:10px}
+.owf-list{list-style:none;display:flex;flex-direction:column;gap:10px;margin-top:4px}
+.owf-list li{display:flex;gap:10px;font-size:14px;color:var(--cream);line-height:1.6}
+.owf-list li::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--gold);margin-top:7px;flex-shrink:0}
+
+/* ════════════════════════════════════════════
+   CONTROLE O SEU NEGÓCIO
+   ════════════════════════════════════════════ */
+#controle{padding:96px 0;background:var(--light)}
+.ctrl-row{display:grid;grid-template-columns:100px 1fr;gap:36px;align-items:flex-start}
+.ctrl-icon{width:96px;height:96px;border-radius:50%;background:var(--white);border:1.5px solid var(--gold-dim);display:flex;align-items:center;justify-content:center;color:var(--gold-dim);box-shadow:0 16px 36px rgba(0,0,0,.06)}
+.ctrl-icon svg{animation:spin-slow 18s linear infinite}
+@keyframes spin-slow{to{transform:rotate(360deg)}}
+.ctrl-title{font-size:clamp(22px,2.8vw,30px);font-weight:800;color:var(--ink);line-height:1.25;margin-bottom:6px}
+.ctrl-sub{font-size:15px;font-weight:600;color:var(--gold-dim);margin-bottom:18px}
+.ctrl-body{font-size:15px;color:var(--ink-soft);line-height:1.8;max-width:680px;margin-bottom:24px}
+.ctrl-label{font-weight:700;color:var(--gold-dim);font-size:14.5px;margin-bottom:14px}
+.ctrl-list{list-style:none;display:flex;flex-direction:column;gap:13px;max-width:680px}
+.ctrl-list li{display:flex;gap:12px;font-size:14.5px;color:var(--ink-soft);line-height:1.65}
+.ctrl-list li svg{flex-shrink:0;margin-top:2px;color:var(--gold-dim)}
+.ctrl-footer{margin-top:22px;font-weight:700;color:var(--gold-dim);font-size:15px;padding:14px 18px;background:var(--gold-pale);border-radius:var(--r-sm);display:inline-block}
+
+/* ════════════════════════════════════════════
+   M-PESA / E-MOLA
+   ════════════════════════════════════════════ */
+#pagamentos{padding:96px 0;background:var(--black);overflow:hidden}
+.pay-row{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.pay-logos{display:flex;gap:14px;margin-bottom:20px}
+.pay-logo{padding:8px 16px;border-radius:8px;font-weight:900;font-size:15px;letter-spacing:.3px}
+.pay-logo.mpesa{background:rgba(226,35,26,.12);color:#FF6B5E;border:1px solid rgba(226,35,26,.3)}
+.pay-logo.emola{background:rgba(0,114,206,.12);color:#5DAEFF;border:1px solid rgba(0,114,206,.3)}
+.pay-title{font-size:clamp(24px,3.2vw,34px);font-weight:800;color:var(--white);line-height:1.2;margin-bottom:8px}
+.pay-sub{font-size:15px;font-weight:600;color:var(--gold-dim);margin-bottom:18px}
+.pay-body{font-size:15px;color:var(--muted-dark);line-height:1.8;margin-bottom:26px;max-width:480px}
+.pay-label{font-weight:700;color:var(--gold);font-size:14.5px;margin-bottom:14px}
+.pay-list{list-style:none;display:flex;flex-direction:column;gap:12px}
+.pay-list li{display:flex;gap:10px;font-size:14.5px;color:var(--cream);line-height:1.6}
+.pay-list li::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--gold);margin-top:7px;flex-shrink:0}
+
+/* animated flow */
+.pay-flow{display:flex;align-items:center;justify-content:space-between;margin-top:32px;max-width:480px;position:relative}
+.flow-step{display:flex;flex-direction:column;align-items:center;gap:8px;position:relative;z-index:1}
+.flow-dot{width:38px;height:38px;border-radius:50%;background:var(--surface);border:1.5px solid var(--gold-dim);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:14px;transition:all .3s}
+.flow-step.active .flow-dot{background:var(--gold);color:var(--black);box-shadow:0 0 0 6px rgba(255,215,0,.12)}
+.flow-label{font-size:9.5px;color:var(--muted-dark);font-family:var(--ff-mono);letter-spacing:.5px;text-align:center}
+.flow-line{position:absolute;top:19px;left:38px;right:38px;height:1.5px;background:rgba(255,215,0,.15);z-index:0}
+.flow-line-fill{position:absolute;top:0;left:0;height:100%;background:var(--gold);width:0%;transition:width .6s var(--ease)}
+
+/* phone mockup */
+.pay-phone{width:240px;background:var(--dark);border-radius:30px;border:1px solid rgba(255,215,0,.2);overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.5);margin:0 auto;position:relative}
+.pay-phone-status{display:flex;justify-content:space-between;padding:14px 18px 6px;font-size:10px;color:var(--muted-dark);font-family:var(--ff-mono)}
+.pay-phone-body{padding:24px 20px 28px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px}
+.pay-shield{width:64px;height:64px;border-radius:50%;background:rgba(39,174,96,.12);border:1.5px solid var(--green);display:flex;align-items:center;justify-content:center;color:var(--green);animation:pulse-ring 2.2s ease-in-out infinite}
+@keyframes pulse-ring{0%,100%{box-shadow:0 0 0 0 rgba(39,174,96,.25)}50%{box-shadow:0 0 0 10px rgba(39,174,96,0)}}
+.pay-status-text{font-size:15px;font-weight:700;color:var(--white)}
+.pay-status-sub{font-size:11px;color:var(--muted-dark);font-family:var(--ff-mono)}
+.pay-divider{width:100%;height:1px;background:rgba(255,215,0,.12);margin:6px 0}
+.pay-row-item{display:flex;justify-content:space-between;width:100%;font-size:11.5px;color:var(--cream)}
+.pay-row-item span:last-child{color:var(--gold-dim);font-weight:700}
+
+/* ════════════════════════════════════════════
+   ÁREAS ESPECIALIZADAS
+   ════════════════════════════════════════════ */
+#areas{padding:96px 0;background:var(--light)}
+.areas-head{text-align:center;max-width:600px;margin:0 auto 50px}
+.areas-head h2{font-size:clamp(24px,3.2vw,32px);font-weight:800;color:var(--ink);margin:14px 0 8px}
+.areas-head p{color:var(--muted-light);font-size:15px}
+.areas-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.area-card{background:var(--white);border-radius:var(--r);padding:32px;border:1.5px solid var(--line-light);transition:all .35s var(--ease);position:relative}
+.area-card.purple{border-top:3px solid var(--purple)}
+.area-card.green{border-top:3px solid var(--green)}
+.area-card:hover{transform:translateY(-6px);box-shadow:0 24px 60px rgba(0,0,0,.08)}
+.area-icon{width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;transition:transform .35s var(--ease)}
+.area-card:hover .area-icon{transform:scale(1.08) rotate(-3deg)}
+.area-icon.purple{background:rgba(155,89,182,.1);color:var(--purple)}
+.area-icon.green{background:rgba(39,174,96,.1);color:var(--green)}
+.area-card h3.purple{color:var(--purple)}
+.area-card h3.green{color:var(--green)}
+.area-card h3{font-size:19px;font-weight:800;margin-bottom:10px}
+.area-card>p{font-size:14px;color:var(--muted-light);line-height:1.7;margin-bottom:18px}
+.area-label{font-weight:700;font-size:13.5px;color:var(--gold-dim);margin-bottom:12px}
+.area-list{list-style:none;display:flex;flex-direction:column;gap:13px}
+.area-list li{font-size:13.5px;color:var(--ink-soft);line-height:1.65;display:flex;gap:10px}
+.area-list li b{color:var(--ink);font-weight:700}
+.area-list .dot{width:5px;height:5px;border-radius:50%;background:var(--dimmer);margin-top:7px;flex-shrink:0}
+.area-card.purple .dot{background:var(--purple)}
+.area-card.green .dot{background:var(--green)}
+
+/* ════════════════════════════════════════════
+   PROCESSO
+   ════════════════════════════════════════════ */
+#processo{padding:96px 0;background:var(--black);overflow:hidden}
+.proc-head{max-width:640px;margin-bottom:56px}
+.proc-head h2{font-size:clamp(24px,3.2vw,32px);font-weight:800;color:var(--white);margin:14px 0 10px}
+.proc-head p{color:var(--muted-dark);font-size:15px}
+.proc-track{position:relative}
+.proc-line{position:absolute;top:34px;left:0;right:0;height:1.5px;background-image:linear-gradient(90deg,var(--gold-dim) 50%,transparent 50%);background-size:14px 1.5px;opacity:.4}
+.proc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;position:relative;z-index:1}
+.proc-step{display:flex;flex-direction:column;gap:16px}
+.proc-num{width:68px;height:68px;border-radius:50%;border:1.5px solid var(--gold);background:var(--black);display:flex;align-items:center;justify-content:center;color:var(--gold);position:relative;transition:transform .35s var(--ease)}
+.proc-step:hover .proc-num{transform:scale(1.08);box-shadow:0 0 0 8px rgba(255,215,0,.06)}
+.proc-num-text{position:absolute;top:-8px;left:-8px;width:24px;height:24px;border-radius:50%;background:var(--gold);color:var(--black);font-size:11px;font-weight:900;display:flex;align-items:center;justify-content:center;font-family:var(--ff-mono)}
+.proc-step h3{color:var(--gold);font-size:16px;font-weight:700}
+.proc-step p{color:var(--muted-dark);font-size:13px;line-height:1.7}
+
+/* ════════════════════════════════════════════
+   PORQUE INGUAN
+   ════════════════════════════════════════════ */
+#porque{padding:96px 0;background:var(--light)}
+.pq-row{display:grid;grid-template-columns:120px 1fr 320px;gap:36px;align-items:start}
+.pq-icon{width:104px;height:104px;border-radius:18px;background:linear-gradient(145deg,var(--black),#1c1808);border:1.5px solid var(--gold-dim);display:flex;align-items:center;justify-content:center;box-shadow:0 16px 40px rgba(0,0,0,.1)}
+.pq-title{font-size:clamp(22px,2.8vw,28px);font-weight:800;color:var(--ink);margin-bottom:8px}
+.pq-sub{font-size:14.5px;font-weight:600;color:var(--gold-dim);margin-bottom:16px}
+.pq-body{font-size:15px;color:var(--ink-soft);line-height:1.8}
+.pq-quote{background:var(--white);border:1.5px solid var(--gold-dim);border-radius:var(--r);padding:26px 24px;position:relative}
+.pq-quote::before{content:'"';position:absolute;top:6px;left:16px;font-size:48px;font-weight:900;color:var(--gold);opacity:.25;font-family:Georgia,serif;line-height:1}
+.pq-quote p{font-size:13.5px;color:var(--ink-soft);line-height:1.7;font-style:italic;margin-bottom:12px;position:relative;z-index:1}
+.pq-quote b{display:block;font-style:normal;color:var(--gold-dim);font-size:13px;font-weight:800;letter-spacing:1px}
+
+/* ════════════════════════════════════════════
+   FAQ — NOVA SECÇÃO (adição pedida no briefing)
+   ════════════════════════════════════════════ */
+#faq{padding:96px 0;background:var(--black)}
+.faq-head{text-align:center;max-width:560px;margin:0 auto 48px}
+.faq-head h2{font-size:clamp(24px,3.2vw,32px);font-weight:800;color:var(--white);margin:14px 0 8px}
+.faq-head p{color:var(--muted-dark);font-size:15px}
+.faq-list{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
+.faq-item{background:var(--surface);border:1.5px solid rgba(255,215,0,.14);border-radius:var(--r-sm);overflow:hidden;transition:border-color .3s}
+.faq-item.open{border-color:var(--gold-dim)}
+.faq-q{width:100%;display:flex;align-items:center;justify-content:space-between;padding:20px 24px;text-align:left;gap:16px}
+.faq-q span{font-size:15px;font-weight:600;color:var(--cream)}
+.faq-q svg{flex-shrink:0;color:var(--gold);transition:transform .35s var(--ease)}
+.faq-item.open .faq-q svg{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s var(--ease)}
+.faq-a-inner{padding:0 24px 22px;font-size:14px;color:var(--muted-dark);line-height:1.75}
+
+/* ════════════════════════════════════════════
+   QUIZ — NOVA SECÇÃO
+   ════════════════════════════════════════════ */
+#quiz{padding:96px 0;background:var(--light)}
+.quiz-box{max-width:680px;margin:0 auto;background:var(--white);border-radius:18px;border:1.5px solid var(--line-light);padding:clamp(28px,5vw,48px);box-shadow:0 24px 70px rgba(0,0,0,.06)}
+.quiz-head{text-align:center;margin-bottom:32px}
+.quiz-head h2{font-size:clamp(21px,2.8vw,27px);font-weight:800;color:var(--ink);margin:12px 0 8px}
+.quiz-head p{color:var(--muted-light);font-size:14px}
+.quiz-progress{height:5px;background:var(--line-light);border-radius:3px;margin-bottom:32px;overflow:hidden}
+.quiz-progress-fill{height:100%;background:var(--gold);width:0%;transition:width .4s var(--ease);border-radius:3px}
+.quiz-q{display:none}
+.quiz-q.active{display:block;animation:qfade .4s var(--ease)}
+@keyframes qfade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.quiz-q-num{font-family:var(--ff-mono);font-size:11px;color:var(--gold-dim);letter-spacing:2px;margin-bottom:10px;display:block}
+.quiz-q-text{font-size:18px;font-weight:700;color:var(--ink);margin-bottom:24px;line-height:1.4}
+.quiz-opts{display:flex;gap:14px}
+.quiz-opt{flex:1;padding:16px;border-radius:var(--r-sm);border:1.5px solid var(--line-light);text-align:center;font-weight:700;font-size:14.5px;color:var(--ink-soft);transition:all .25s}
+.quiz-opt:hover{border-color:var(--gold-dim);background:var(--gold-pale)}
+.quiz-opt.yes{color:var(--green)}
+.quiz-opt.no{color:#C0392B}
+.quiz-result{display:none;text-align:center}
+.quiz-result.active{display:block;animation:qfade .5s var(--ease)}
+.quiz-score-ring{width:140px;height:140px;margin:0 auto 24px;position:relative}
+.quiz-score-ring svg{transform:rotate(-90deg)}
+.quiz-score-num{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column}
+.quiz-score-num .big{font-size:34px;font-weight:900;color:var(--ink);font-family:var(--ff-mono)}
+.quiz-score-num .small{font-size:10px;color:var(--muted-light);letter-spacing:1px}
+.quiz-verdict{font-size:17px;font-weight:800;color:var(--ink);margin-bottom:10px}
+.quiz-verdict-body{font-size:14px;color:var(--muted-light);line-height:1.7;margin-bottom:28px;max-width:440px;margin-left:auto;margin-right:auto}
+
+/* ════════════════════════════════════════════
+   LEAD FORM — NOVA SECÇÃO
+   ════════════════════════════════════════════ */
+#diagnostico{padding:96px 0;background:var(--black)}
+.diag-row{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.diag-head h2{font-size:clamp(24px,3.2vw,34px);font-weight:800;color:var(--white);margin:14px 0 14px;line-height:1.2}
+.diag-head p{color:var(--muted-dark);font-size:15px;line-height:1.75;margin-bottom:24px;max-width:440px}
+.diag-points{display:flex;flex-direction:column;gap:14px}
+.diag-point{display:flex;gap:12px;align-items:center;font-size:14px;color:var(--cream)}
+.diag-point svg{color:var(--gold);flex-shrink:0}
+.diag-form{background:var(--surface);border:1.5px solid rgba(255,215,0,.16);border-radius:var(--r);padding:32px}
+.field{margin-bottom:18px}
+.field label{display:block;font-size:12.5px;font-weight:700;color:var(--gold-dim);margin-bottom:7px;letter-spacing:.3px}
+.field input,.field textarea{width:100%;background:var(--black);border:1.5px solid rgba(255,215,0,.16);border-radius:var(--r-sm);padding:13px 15px;color:var(--cream);font-size:14px;font-family:inherit;transition:border-color .25s}
+.field input:focus,.field textarea:focus{border-color:var(--gold)}
+.field textarea{resize:vertical;min-height:90px}
+.field input::placeholder,.field textarea::placeholder{color:var(--dimmer)}
+.form-note{font-size:11.5px;color:var(--dimmer);margin-top:14px;text-align:center;line-height:1.6}
+
+/* ════════════════════════════════════════════
+   CONTACTO
+   ════════════════════════════════════════════ */
+#contacto{padding:96px 0;background:var(--black)}
+.ct-head{margin-bottom:48px;max-width:560px}
+.ct-head h2{font-family:var(--ff-mono);font-size:clamp(22px,2.8vw,28px);font-weight:800;color:var(--white);letter-spacing:2px;margin-bottom:14px}
+.ct-head .gold-line{color:var(--gold);font-weight:700;font-size:16px;margin-bottom:4px}
+.ct-head .gold-line2{color:var(--white);font-weight:700;font-size:16px;margin-bottom:14px}
+.ct-head p{color:var(--muted-dark);font-size:14.5px;line-height:1.75}
+.ct-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.ct-card{background:var(--surface);border:1.5px solid rgba(255,215,0,.14);border-radius:var(--r);padding:26px 22px;display:flex;flex-direction:column;gap:12px;transition:all .35s var(--ease)}
+.ct-card:hover{transform:translateY(-6px);border-color:var(--gold-dim);box-shadow:0 20px 50px rgba(0,0,0,.3)}
+.ct-card-icon{width:46px;height:46px;border-radius:11px;display:flex;align-items:center;justify-content:center}
+.ct-card.wa .ct-card-icon{background:rgba(37,211,102,.12);color:var(--whatsapp)}
+.ct-card.email .ct-card-icon{background:rgba(255,215,0,.1);color:var(--gold)}
+.ct-card.ig .ct-card-icon{background:rgba(225,48,108,.12);color:var(--pink)}
+.ct-card.loc .ct-card-icon{background:rgba(255,215,0,.1);color:var(--gold)}
+.ct-card-label{font-family:var(--ff-mono);font-size:10.5px;letter-spacing:2px;color:var(--muted-dark)}
+.ct-card-value{font-size:15.5px;font-weight:700;color:var(--cream)}
+.ct-card-sub{font-size:12px;color:var(--dimmer)}
+
+/* ════════════════════════════════════════════
+   FOOTER
+   ════════════════════════════════════════════ */
+footer{background:var(--dark);border-top:1px solid rgba(255,215,0,.1);padding:56px 0 28px}
+.ft-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:48px;margin-bottom:40px}
+.ft-brand{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.ft-desc{font-size:13px;color:var(--muted-dark);line-height:1.75;max-width:300px}
+.ft-col-title{font-family:var(--ff-mono);font-size:11px;letter-spacing:2.5px;color:var(--gold-dim);margin-bottom:16px}
+.ft-links{display:flex;flex-direction:column;gap:11px}
+.ft-links a,.ft-links span{font-size:13.5px;color:var(--muted-dark)}
+.ft-links a:hover{color:var(--gold)}
+.ft-bottom{border-top:1px solid rgba(255,215,0,.08);padding-top:22px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
+.ft-copy{font-family:var(--ff-mono);font-size:11.5px;color:var(--dimmer);letter-spacing:.5px}
+.ft-legal{display:flex;gap:18px}
+.ft-legal a{font-size:11.5px;color:var(--dimmer)}
+.ft-legal a:hover{color:var(--gold-dim)}
+
+/* ════════════════════════════════════════════
+   WHATSAPP FLOATING CTA
+   ════════════════════════════════════════════ */
+.wa-fab-wrap{position:fixed;bottom:26px;right:26px;z-index:990;display:flex;align-items:center;gap:0}
+.wa-tooltip{background:var(--white);color:var(--ink);font-size:13px;font-weight:600;padding:10px 16px;border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.18);white-space:nowrap;opacity:0;transform:translateX(8px);transition:all .3s var(--ease);margin-right:12px;position:relative}
+.wa-tooltip::after{content:'';position:absolute;right:-6px;top:50%;transform:translateY(-50%);width:0;height:0;border-top:6px solid transparent;border-bottom:6px solid transparent;border-left:6px solid var(--white)}
+.wa-fab-wrap:hover .wa-tooltip{opacity:1;transform:translateX(0)}
+.wa-fab{width:60px;height:60px;background:var(--whatsapp);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 28px rgba(37,211,102,.4);position:relative;flex-shrink:0}
+.wa-fab::before{content:'';position:absolute;inset:0;border-radius:50%;background:var(--whatsapp);animation:wa-pulse 2.4s ease-out infinite}
+@keyframes wa-pulse{0%{transform:scale(1);opacity:.6}100%{transform:scale(1.9);opacity:0}}
+.wa-fab svg{width:30px;height:30px;color:#fff;position:relative;z-index:1}
+.wa-online-dot{position:absolute;top:2px;right:2px;width:14px;height:14px;background:#4ADE80;border:2px solid var(--black);border-radius:50%;z-index:2}
+
+/* ════════════════════════════════════════════
+   RESPONSIVE
+   ════════════════════════════════════════════ */
+@media(max-width:980px){
+  .hero-row{grid-template-columns:1fr}
+  .hero-visual{order:-1;height:280px}
+  .owf-grid{grid-template-columns:1fr}
+  .areas-grid{grid-template-columns:1fr}
+  .proc-grid{grid-template-columns:1fr 1fr;gap:32px}
+  .proc-line{display:none}
+  .pq-row{grid-template-columns:1fr;gap:24px}
+  .pq-icon{width:80px;height:80px}
+  .pay-row{grid-template-columns:1fr;gap:40px}
+  .diag-row{grid-template-columns:1fr;gap:40px}
+  .ct-grid{grid-template-columns:1fr 1fr}
+  .ft-grid{grid-template-columns:1fr 1fr}
+  .nav-tagline{display:none}
+}
+@media(max-width:680px){
+  .nav-links{display:none}
+  .nav-burger{display:flex}
+  .qs-row,.ctrl-row{grid-template-columns:1fr}
+  .qs-icon,.ctrl-icon{width:72px;height:72px}
+  .proc-grid{grid-template-columns:1fr}
+  .ct-grid{grid-template-columns:1fr}
+  .ft-grid{grid-template-columns:1fr;gap:32px}
+  .quiz-opts{flex-direction:column}
+  .ft-bottom{flex-direction:column;align-items:flex-start}
+  .wa-tooltip{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ════════ NAV ════════ -->
+<nav id="nav">
+  <div class="container nav-row">
+    <a href="#hero" class="nav-brand">
+      <div class="nav-mark">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="1.8"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-6h6v6"/></svg>
+      </div>
+      <span class="nav-wordmark">INGUAN</span>
+    </a>
+    <div class="nav-tagline">INGUAN&nbsp;&nbsp;<b>AFRICAN&nbsp;SYSTEMS.&nbsp;GLOBAL&nbsp;PRECISION.</b></div>
+    <button class="nav-burger" id="burger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-panel" id="mobilePanel">
+  <a href="#quem-somos" class="mp-link">Quem Somos</a>
+  <a href="#o-que-fazemos" class="mp-link">O Que Fazemos</a>
+  <a href="#areas" class="mp-link">Especialidades</a>
+  <a href="#faq" class="mp-link">FAQ</a>
+  <a href="#contacto" class="mp-link">Contacto</a>
+  <a href="https://wa.me/258867247092?text=Ol%C3%A1%20INGUAN.%20Gostaria%20de%20receber%20um%20diagn%C3%B3stico%20para%20o%20meu%20neg%C3%B3cio." class="btn btn-wa" target="_blank" rel="noopener">Fala Connosco</a>
+</div>
+
+<!-- ════════ HERO ════════ -->
+<section id="hero">
+  <div class="hero-particles" id="particles"></div>
+  <div class="hero-grid"></div>
+  <div class="container hero-row">
+    <div class="reveal in" id="heroLeft">
+      <span class="eyebrow on-dark">INGUAN™ · MAPUTO, MOÇAMBIQUE</span>
+      <h1 class="hero-headline">Transição<br>do simples<br>para o <span class="gold">excelente</span></h1>
+      <p class="hero-sub">Elevamos o teu negócio à um novo patamar com eficiência &amp; profissionalismo</p>
+      <div class="hero-actions">
+        <a href="https://wa.me/258867247092?text=Ol%C3%A1%20INGUAN.%20Gostaria%20de%20receber%20um%20diagn%C3%B3stico%20para%20o%20meu%20neg%C3%B3cio." class="btn btn-gold" target="_blank" rel="noopener">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.463 3.48 11.815 11.815 0 0012.05 0z"/></svg>
+          Receber Diagnóstico no WhatsApp
+        </a>
+        <a href="#o-que-fazemos" class="btn btn-outline-dark">Ver o que fazemos</a>
+      </div>
+    </div>
+    <div class="hero-visual reveal-r in d2">
+      <svg viewBox="0 0 480 380" xmlns="http://www.w3.org/2000/svg">
+        <!-- africa dotted silhouette (decorative abstraction) -->
+        <g class="africa-dots" opacity="0.5">
+          <circle cx="330" cy="60" r="2" fill="#B8960C"/><circle cx="345" cy="75" r="2" fill="#B8960C" style="animation-delay:.2s"/>
+          <circle cx="320" cy="90" r="2" fill="#B8960C" style="animation-delay:.4s"/><circle cx="355" cy="100" r="2" fill="#B8960C" style="animation-delay:.6s"/>
+          <circle cx="335" cy="115" r="2" fill="#B8960C" style="animation-delay:.8s"/><circle cx="360" cy="130" r="2" fill="#B8960C" style="animation-delay:1s"/>
+          <circle cx="340" cy="145" r="2" fill="#FFD700" style="animation-delay:1.2s"/><circle cx="325" cy="160" r="2" fill="#B8960C" style="animation-delay:.3s"/>
+          <circle cx="350" cy="175" r="2" fill="#B8960C" style="animation-delay:.5s"/><circle cx="333" cy="190" r="2" fill="#B8960C" style="animation-delay:.7s"/>
+          <circle cx="318" cy="205" r="2" fill="#FFD700" style="animation-delay:.9s"/><circle cx="345" cy="220" r="2" fill="#B8960C" style="animation-delay:1.1s"/>
+          <circle cx="328" cy="235" r="2" fill="#B8960C" style="animation-delay:.15s"/><circle cx="310" cy="250" r="2" fill="#B8960C" style="animation-delay:.35s"/>
+          <circle cx="305" cy="80" r="2" fill="#B8960C" style="animation-delay:.55s"/><circle cx="365" cy="115" r="2" fill="#B8960C" style="animation-delay:.75s"/>
+          <circle cx="375" cy="140" r="2" fill="#B8960C" style="animation-delay:.95s"/><circle cx="300" cy="120" r="2" fill="#B8960C" style="animation-delay:1.15s"/>
+        </g>
+        <!-- city skyline silhouette -->
+        <g opacity="0.35" fill="#3A3422">
+          <rect x="20" y="240" width="18" height="80"/><rect x="42" y="210" width="16" height="110"/>
+          <rect x="62" y="255" width="20" height="65"/><rect x="86" y="190" width="14" height="130"/>
+          <rect x="104" y="230" width="18" height="90"/><rect x="126" y="265" width="16" height="55"/>
+        </g>
+        <!-- bar chart -->
+        <g>
+          <rect class="chart-bar" x="60" y="260" width="26" height="60" rx="2" fill="#6B5A1A" style="animation-delay:.4s"/>
+          <rect class="chart-bar" x="96" y="230" width="26" height="90" rx="2" fill="#8C7522" style="animation-delay:.55s"/>
+          <rect class="chart-bar" x="132" y="195" width="26" height="125" rx="2" fill="#B8960C" style="animation-delay:.7s"/>
+          <rect class="chart-bar" x="168" y="155" width="26" height="165" rx="2" fill="#D4AF37" style="animation-delay:.85s"/>
+          <rect class="chart-bar" x="204" y="110" width="26" height="210" rx="2" fill="#FFD700" style="animation-delay:1s"/>
+        </g>
+        <!-- growth line -->
+        <path class="chart-line" d="M55 300 L130 240 L200 200 L250 140 L320 70" stroke="#FFD700" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+        <g class="chart-arrow">
+          <path d="M295 90 L320 65 L320 90 M320 65 L295 65" stroke="#FFD700" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ QUEM SOMOS ════════ -->
+<section id="quem-somos" class="bg-light">
+  <div class="container qs-row">
+    <div class="qs-icon reveal-l in">
+      <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="1.5"><path d="M3 21h18M5 21V7l8-4 8 4v14M9 9h1m-1 4h1m4-4h1m-1 4h1m-7 8v-4h6v4"/></svg>
+    </div>
+    <div class="reveal in d1">
+      <span class="eyebrow on-light">SOBRE A INGUAN</span>
+      <h2 class="qs-title">Quem somos nós?</h2>
+      <p class="qs-body">somos a agência digital Moçambicana situamo-nos em Maputo.</p>
+      <p class="qs-body">Somos a agência digital que Desenvolve sistemas digitais para pequenos &amp; médios negócios moçambicanos &amp; no PALOP ,que visam solucionar problemas que afectam a economia do negócio , modernizar tarefas manuais &amp; repetitivas !</p>
+      <span class="qs-highlight">Transformação Digital de negócios que pretendem crescer !</span>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ O QUE FAZEMOS ════════ -->
+<section id="o-que-fazemos">
+  <div class="container">
+    <div class="owf-head reveal in">
+      <span class="eyebrow on-dark">SERVIÇOS</span>
+      <h2>O que fazemos?</h2>
+      <p>Desenvolvemos Soluções digitais para cada fase do crescimento do teu negócio.</p>
+      <p class="sub">Os nossos serviços</p>
+      <p class="sub2">•Sistemas à nível do seu negócio</p>
+    </div>
+    <div class="owf-grid">
+      <div class="owf-card reveal-l in d1">
+        <div class="owf-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+        <h3>Desenvolvimento de sistemas digitais</h3>
+        <ul class="owf-list">
+          <li>desenvolvemos sistemas digitais completos compatíveis ao teu negócio — desde aplicativos compatível à celulares ,&amp; a plataformas de website.</li>
+        </ul>
+        <p style="margin-top:14px">Adaptamos os sitemas digitais ao mercado &amp; à realidade dos negócios moçambicanos !</p>
+      </div>
+      <div class="owf-card reveal-r in d2">
+        <div class="owf-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 17l6-6 4 4 8-8M21 7v6h-6"/></svg></div>
+        <h3>O que disponibilizamos ao teu negócio:</h3>
+        <ul class="owf-list">
+          <li>Sistemas que funcionam sem ligação a Internet .</li>
+          <li>Sistemas compatíveis à qualquer Android.</li>
+          <li>Integramos pagamentos móveis locais.</li>
+          <li>Entrega de relatórios documentos</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ CONTROLE O SEU NEGÓCIO ════════ -->
+<section id="controle" class="bg-light">
+  <div class="container ctrl-row">
+    <div class="ctrl-icon reveal-l in">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/><path d="M12 3v1M12 20v1M3 12h1M20 12h1"/></svg>
+    </div>
+    <div class="reveal in d1">
+      <h2 class="ctrl-title">Controle o seu negócio &amp; elimine processos manuais repetitivos</h2>
+      <p class="ctrl-sub">Gestão &amp; automatização de operações manuais</p>
+      <p class="ctrl-body">Transformamos tarefas manuais repetitivas em sistemas digitais automatizados ,popando mais o teu tempo e dando-lhe uma visão mais clara do teu negócio em tempo real !</p>
+      <p class="ctrl-label">O que disponibilizamos ao teu negócio</p>
+      <ul class="ctrl-list">
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Controle em tempo real das finanças do teu negócio.</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Entrega automática de relatórios desde :diários, semanais à mensais.</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Dados do teu negócio que possbllitam uma visão clara do nogócio antes de tomar uma decisão.</li>
+      </ul>
+      <span class="ctrl-footer">Reduz erros &amp; perdas constantes de capital :erros operacionais!</span>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ M-PESA / E-MOLA ════════ -->
+<section id="pagamentos">
+  <div class="container pay-row">
+    <div class="reveal-l in">
+      <div class="pay-logos">
+        <span class="pay-logo mpesa">M-Pesa</span>
+        <span class="pay-logo emola">e-Mola</span>
+      </div>
+      <h2 class="pay-title">M-pesa &amp; E-Mola no centro do teu negócio !</h2>
+      <p class="pay-sub">Integração de pagamentos móveis</p>
+      <p class="pay-body">Integramos o M-pesa e E-Mola no teu negócio directamente em qualquer sistema digital —websites , aplicativos ou plataformas</p>
+      <p class="pay-label">O que disponibilizamos ao teu negócio</p>
+      <ul class="pay-list">
+        <li>API (Ligação com ()do M-pesa &amp; E-Mola certificadas</li>
+        <li>Verificação automática em tempo real de pagamentos</li>
+        <li>Pagamentos recorrentes e subscrições</li>
+      </ul>
+
+      <div class="pay-flow" id="payFlow">
+        <div class="flow-line"><div class="flow-line-fill" id="flowFill"></div></div>
+        <div class="flow-step" data-i="0"><div class="flow-dot">①</div><span class="flow-label">CLIENTE</span></div>
+        <div class="flow-step" data-i="1"><div class="flow-dot">②</div><span class="flow-label">PAGAMENTO</span></div>
+        <div class="flow-step" data-i="2"><div class="flow-dot">③</div><span class="flow-label">VERIFICAÇÃO</span></div>
+        <div class="flow-step" data-i="3"><div class="flow-dot">④</div><span class="flow-label">CONFIRMAÇÃO</span></div>
+      </div>
+    </div>
+
+    <div class="reveal-r in d2">
+      <div class="pay-phone">
+        <div class="pay-phone-status"><span>09:41</span><span>● ● ●▭</span></div>
+        <div class="pay-phone-body">
+          <div class="pay-shield">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <div class="pay-status-text">Pagamento Aprovado</div>
+          <div class="pay-status-sub">M-Pesa &amp; E-Mola Integrado</div>
+          <div class="pay-divider"></div>
+          <div class="pay-row-item"><span>Valor</span><span>1.500 MT</span></div>
+          <div class="pay-row-item"><span>Estado</span><span>Confirmado ✓</span></div>
+          <div class="pay-row-item"><span>Sistema</span><span>INGUAN</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ ÁREAS ESPECIALIZADAS ════════ -->
+<section id="areas" class="bg-light">
+  <div class="container">
+    <div class="areas-head reveal in">
+      <span class="eyebrow on-light">ESPECIALIDADES</span>
+      <h2>Áreas onde somos especializados/especialitas</h2>
+      <p>Temos Experiência aprofundada nos principais sectores da economia &amp; negócios moçambicanos !</p>
+    </div>
+    <div class="areas-grid">
+      <div class="area-card purple reveal-l in d1">
+        <div class="area-icon purple"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="8" r="4"/><path d="M6 21v-2a6 6 0 0112 0v2"/><path d="M19 7l2 2-2 2M19 9h-4"/></svg></div>
+        <h3 class="purple">Beleza &amp; estética</h3>
+        <p>Desenvolvemos a soluções digitais para o seu salão de beleza, barbearia &amp; centros estéticos:</p>
+        <p class="area-label">O que disponibilizamos ao teu negócio</p>
+        <ul class="area-list">
+          <li><span class="dot"></span><b>Gestão de caixa:</b>&nbsp;visão mais clara da boa gestão do dinheiro/finanças do teu salão/barbearia ; sabendo quanto dinheiro tem ,quanto ganhou/entrou ,quanto perdeu/saiu ! Resultado em menos de 1minuto.</li>
+          <li><span class="dot"></span><b>Agendamento:</b>&nbsp;marcações/agendamento de clientes ,sem complicações em alguns segundos !</li>
+          <li><span class="dot"></span><b>Fidelização de clientes:</b>&nbsp;subscrição/parceria com os teus clientes .</li>
+        </ul>
+      </div>
+      <div class="area-card green reveal-r in d2">
+        <div class="area-icon green"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg></div>
+        <h3 class="green">Comércio</h3>
+        <p>Desenvolvemos ferramentas de gestão para o negócio de comércio/vendas.</p>
+        <ul class="area-list" style="margin-top:4px">
+          <li><span class="dot"></span><b>Controle de sctoks:</b>&nbsp;sabes exactamente quantas unidades/número de produtos armazenados/guardados, quantas unidades/número de produtos que perdeu/sumiram .</li>
+          <li><span class="dot"></span><b>Vendas:</b>&nbsp;sabes exactamente quantos produtos foram vendidos durante o dia , no final do dia tem o número exacto sem mais nem menos.</li>
+          <li><span class="dot"></span><b>Fornecedores:</b>&nbsp;sabes o número exacto de produtos entres no teu estabelecimento/ loja/ banca.</li>
+          <li><span class="dot"></span><b>Relatórios financeiros:</b>&nbsp;sabes exactamente quanto ganhou /gastou durante o dia semana &amp; final do mês</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ COMO PRESTAMOS OS NOSSOS SERVIÇOS ════════ -->
+<section id="processo">
+  <div class="container">
+    <div class="proc-head reveal in">
+      <span class="eyebrow on-dark">METODOLOGIA</span>
+      <h2>Como prestamos os nossos serviços</h2>
+      <p>Do problema à solução completa &amp; entregue — desenvolvemos a solução de uma maneira clara &amp; transparente, orientando o resultado!</p>
+    </div>
+    <div class="proc-track">
+      <div class="proc-line"></div>
+      <div class="proc-grid">
+        <div class="proc-step reveal in d1">
+          <div class="proc-num"><span class="proc-num-text">1</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg></div>
+          <h3>Diagnóstico:</h3>
+          <p>análise o teu negócio num ponto de vista profissional , os processos usados agora &amp; os teus objectivos . Identificamos exactamente onde a tecnologia cria mais valor &amp; faz o teu negócio evoluir/crescer para o melhor!</p>
+        </div>
+        <div class="proc-step reveal in d2">
+          <div class="proc-num"><span class="proc-num-text">2</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="0.8" fill="currentColor"/></svg></div>
+          <h3>Estratégia:</h3>
+          <p>desenhamos solução ideal para o teu negócio ; o que pretende atingir ,onde implementar/usar a tecnologia, prazo/tempo de investimento. Tudo documentado &amp; validado/aprovado antes de começarmos a desenvolver!</p>
+        </div>
+        <div class="proc-step reveal in d3">
+          <div class="proc-num"><span class="proc-num-text">3</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+          <h3>Desenvolvimento:</h3>
+          <p>depois de fazer um diagnóstico /análise completa do teu negócio &amp; elaborar/criar a estratégia. Construímos a solução ideal para o problema que vem afectando o teu crescimento &amp; do teu negócio com base nos métodos offline-first (sistemas/aplicativos offline), testado para garantindo que não haja nenhuma supresa no percurso/caminho.</p>
+        </div>
+        <div class="proc-step reveal in d4">
+          <div class="proc-num"><span class="proc-num-text">4</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M11 17a4 4 0 100-8 4 4 0 000 8zM21 21l-3.5-3.5M3 7l4 4 4-4M7 3v8"/></svg></div>
+          <h3>Entrega &amp; parceria:</h3>
+          <p>entregamos a solução, não como fechamento de mais um negócio da INGUAN mas sim , marcando o início de uma nova parceria. O nosso sucesso depende do teu .</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ PORQUE INGUAN ════════ -->
+<section id="porque" class="bg-light">
+  <div class="container pq-row">
+    <div class="pq-icon reveal-l in">
+      <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="1.5"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-6h6v6"/></svg>
+    </div>
+    <div class="reveal in d1">
+      <span class="eyebrow on-light">DIFERENCIAL</span>
+      <h2 class="pq-title">PORQUE INGUAN ?</h2>
+      <p class="pq-sub">O que nos distingue/ diferente de outras agências ?</p>
+      <p class="pq-body">Não somos uma agência digital genérica. Somos especializados no mercado africano lusófono, construímos de raiz para a realidade de Moçambique, não adaptamos soluções pensadas para estrangeiros , criámos soluções pensadas para os negócios moçambicanos.</p>
+    </div>
+    <div class="pq-quote reveal-r in d2">
+      <p>A nossa missão é tornar tecnologia de classe mundial acessível a cada negócio em Moçambique — independentemente do dispositivo, da ligação à internet ou do meio de pagamento disponível.</p>
+      <b>— INGUAN</b>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ FAQ (nova secção) ════════ -->
+<section id="faq">
+  <div class="container">
+    <div class="faq-head reveal in">
+      <span class="eyebrow on-dark">DÚVIDAS</span>
+      <h2>Perguntas Frequentes</h2>
+      <p>As respostas que mais nos pedem antes de começar.</p>
+    </div>
+    <div class="faq-list" id="faqList">
+      <div class="faq-item">
+        <button class="faq-q"><span>Quanto tempo demora o desenvolvimento?</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-a"><div class="faq-a-inner">Depende da complexidade do sistema, mas o nosso processo de diagnóstico e estratégia permite-nos documentar prazos exactos antes de começarmos a desenvolver — recebes essa estimativa por escrito antes de qualquer compromisso.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>Os sistemas funcionam offline?</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-a"><div class="faq-a-inner">Sim. Construímos com base nos métodos offline-first — o sistema continua a funcionar sem ligação à internet e sincroniza automaticamente assim que a rede volta.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>Integram M-Pesa?</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-a"><div class="faq-a-inner">Sim. Integramos M-Pesa directamente no teu sistema digital, com verificação automática em tempo real de cada pagamento recebido.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>Integram E-Mola?</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-a"><div class="faq-a-inner">Sim. O E-Mola está integrado da mesma forma que o M-Pesa — pagamentos recorrentes, subscrições e verificação automática incluídos.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>Posso usar em Android?</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-a"><div class="faq-a-inner">Sim. Os nossos sistemas são compatíveis com qualquer Android, incluindo dispositivos de gama básica — não precisas de um telemóvel topo de gama.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>Prestam suporte técnico?</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-a"><div class="faq-a-inner">Sim, via WhatsApp — com resposta em menos de 24 horas. Descreves o problema e tratamos directamente contigo.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>O sistema pode crescer com o meu negócio?</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-a"><div class="faq-a-inner">Sim. Cada solução é construída de raiz para a tua realidade actual, mas pensada para evoluir — novas funcionalidades são adicionadas à medida que o teu negócio cresce.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ QUIZ (nova secção) ════════ -->
+<section id="quiz" class="bg-light">
+  <div class="container">
+    <div class="quiz-box reveal in">
+      <div class="quiz-head">
+        <span class="eyebrow on-light">DIAGNÓSTICO RÁPIDO</span>
+        <h2>Descubra o nível digital do seu negócio</h2>
+        <p>5 perguntas. Menos de 1 minuto.</p>
+      </div>
+      <div class="quiz-progress"><div class="quiz-progress-fill" id="quizProgress"></div></div>
+
+      <div class="quiz-q active" data-q="0">
+        <span class="quiz-q-num">PERGUNTA 1 DE 5</span>
+        <p class="quiz-q-text">Possui controlo financeiro do seu negócio?</p>
+        <div class="quiz-opts"><button class="quiz-opt yes" data-v="1">Sim</button><button class="quiz-opt no" data-v="0">Não</button></div>
+      </div>
+      <div class="quiz-q" data-q="1">
+        <span class="quiz-q-num">PERGUNTA 2 DE 5</span>
+        <p class="quiz-q-text">Usa relatórios para tomar decisões?</p>
+        <div class="quiz-opts"><button class="quiz-opt yes" data-v="1">Sim</button><button class="quiz-opt no" data-v="0">Não</button></div>
+      </div>
+      <div class="quiz-q" data-q="2">
+        <span class="quiz-q-num">PERGUNTA 3 DE 5</span>
+        <p class="quiz-q-text">Faz gestão de stock?</p>
+        <div class="quiz-opts"><button class="quiz-opt yes" data-v="1">Sim</button><button class="quiz-opt no" data-v="0">Não</button></div>
+      </div>
+      <div class="quiz-q" data-q="3">
+        <span class="quiz-q-num">PERGUNTA 4 DE 5</span>
+        <p class="quiz-q-text">Recebe pagamentos móveis (M-Pesa/e-Mola)?</p>
+        <div class="quiz-opts"><button class="quiz-opt yes" data-v="1">Sim</button><button class="quiz-opt no" data-v="0">Não</button></div>
+      </div>
+      <div class="quiz-q" data-q="4">
+        <span class="quiz-q-num">PERGUNTA 5 DE 5</span>
+        <p class="quiz-q-text">Tem algum sistema digital no seu negócio?</p>
+        <div class="quiz-opts"><button class="quiz-opt yes" data-v="1">Sim</button><button class="quiz-opt no" data-v="0">Não</button></div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <div class="quiz-score-ring">
+          <svg width="140" height="140" viewBox="0 0 140 140">
+            <circle cx="70" cy="70" r="60" fill="none" stroke="#E5E2D6" stroke-width="10"/>
+            <circle id="scoreCircle" cx="70" cy="70" r="60" fill="none" stroke="#FFD700" stroke-width="10" stroke-linecap="round" stroke-dasharray="377" stroke-dashoffset="377"/>
+          </svg>
+          <div class="quiz-score-num"><span class="big" id="scoreNum">0%</span><span class="small">DIGITAL</span></div>
+        </div>
+        <div class="quiz-verdict" id="quizVerdict"></div>
+        <p class="quiz-verdict-body" id="quizVerdictBody"></p>
+        <a href="#" id="quizCta" target="_blank" rel="noopener" class="btn btn-wa">Receber Diagnóstico Gratuito</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ FORMULÁRIO DE DIAGNÓSTICO (nova secção) ════════ -->
+<section id="diagnostico">
+  <div class="container diag-row">
+    <div class="reveal-l in diag-head">
+      <span class="eyebrow on-dark">SOLICITAR DIAGNÓSTICO</span>
+      <h2>Descreve o teu negócio. Recebemos o pedido directamente.</h2>
+      <p>Preenche o formulário — abrimos automaticamente o WhatsApp ou o teu email com tudo já preenchido, pronto a enviar.</p>
+      <div class="diag-points">
+        <div class="diag-point"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Resposta em menos de 24 horas</div>
+        <div class="diag-point"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Diagnóstico inicial sem compromisso</div>
+        <div class="diag-point"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Proposta documentada e transparente</div>
+      </div>
+    </div>
+    <form class="diag-form reveal-r in d1" id="leadForm">
+      <div class="field"><label for="f-nome">Nome</label><input id="f-nome" type="text" placeholder="O teu nome" required></div>
+      <div class="field"><label for="f-empresa">Empresa / Negócio</label><input id="f-empresa" type="text" placeholder="Nome do teu negócio" required></div>
+      <div class="field"><label for="f-tel">Telefone</label><input id="f-tel" type="tel" placeholder="84/86/87 xxx xxxx" required></div>
+      <div class="field"><label for="f-email">Email</label><input id="f-email" type="email" placeholder="o-teu-email@exemplo.com"></div>
+      <div class="field"><label for="f-problema">Problema principal</label><textarea id="f-problema" placeholder="Descreve o desafio do teu negócio..." required></textarea></div>
+      <button type="submit" class="btn btn-gold btn-block">Solicitar Diagnóstico</button>
+      <p class="form-note">Ao submeter, abre-se o WhatsApp com a tua mensagem pronta a enviar para +258 867 247 092.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ════════ CONTACTO ════════ -->
+<section id="contacto">
+  <div class="container">
+    <div class="ct-head reveal in">
+      <h2>CONTACTO</h2>
+      <p class="gold-line">Tens um problema?</p>
+      <p class="gold-line2">A INGUAN tem a solução</p>
+      <p>Descreve-nos o desafio/problema do teu negócio. Em menos de 24 horas tens um diagnóstico claro e uma proposta de solução.</p>
+    </div>
+    <div class="ct-grid">
+      <a href="https://wa.me/258867247092" target="_blank" rel="noopener" class="ct-card wa reveal in d1">
+        <div class="ct-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.463 3.48 11.815 11.815 0 0012.05 0z"/></svg></div>
+        <span class="ct-card-label">WHATSAPP</span><span class="ct-card-value">867 247 092</span><span class="ct-card-sub">Resposta em &lt; 24h</span>
+      </a>
+      <a href="mailto:inguanofficial@gmail.com" class="ct-card email reveal in d2">
+        <div class="ct-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+        <span class="ct-card-label">EMAIL</span><span class="ct-card-value">inguanofficial@gmail.com</span><span class="ct-card-sub">Propostas &amp; projectos</span>
+      </a>
+      <a href="https://www.instagram.com/inguan.io" target="_blank" rel="noopener" class="ct-card ig reveal in d3">
+        <div class="ct-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="18" cy="6" r="1" fill="currentColor"/></svg></div>
+        <span class="ct-card-label">INSTAGRAM</span><span class="ct-card-value">@inguan.io</span><span class="ct-card-sub">Mensagem directa</span>
+      </a>
+      <div class="ct-card loc reveal in d4">
+        <div class="ct-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <span class="ct-card-label">LOCALIZAÇÃO</span><span class="ct-card-value">Maputo</span><span class="ct-card-sub">Moçambique · PALOP</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ FOOTER ════════ -->
+<footer>
+  <div class="container">
+    <div class="ft-grid">
+      <div>
+        <div class="ft-brand">
+          <div class="nav-mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="1.8"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-6h6v6"/></svg></div>
+          <span class="nav-wordmark">INGUAN</span>
+        </div>
+        <p class="ft-desc">Agência de transformação digital especializada no mercado africano lusófono .</p>
+      </div>
+      <div>
+        <div class="ft-col-title">SERVIÇOS</div>
+        <div class="ft-links">
+          <span>Sistemas Digitais — Gestão &amp; Automação</span>
+          <span>Pagamentos Móveis</span>
+          <span>Transformação Digital</span>
+        </div>
+      </div>
+      <div>
+        <div class="ft-col-title">CONTACTO</div>
+        <div class="ft-links">
+          <span>WhatsApp Business</span>
+          <a href="https://wa.me/258867247092" target="_blank" rel="noopener">+258 867 247 092</a>
+          <span>Email</span>
+          <a href="mailto:inguanofficial@gmail.com">inguanofficial@gmail.com</a>
+          <span>Instagram</span>
+          <a href="https://www.instagram.com/inguan.io" target="_blank" rel="noopener">@Inguan.io</a>
+          <span>Localização</span>
+          <span>Maputo, Moçambique</span>
+        </div>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <span class="ft-copy">INGUAN © 2026 · Todos os direitos reservados &nbsp;·&nbsp; MAPUTO · MOÇAMBIQUE · PALOP</span>
+      <div class="ft-legal">
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ════════ WHATSAPP FAB ════════ -->
+<div class="wa-fab-wrap">
+  <span class="wa-tooltip">Fala connosco no WhatsApp</span>
+  <a href="https://wa.me/258867247092?text=Ol%C3%A1%20INGUAN.%20Gostaria%20de%20receber%20um%20diagn%C3%B3stico%20para%20o%20meu%20neg%C3%B3cio." target="_blank" rel="noopener" class="wa-fab" aria-label="Falar no WhatsApp">
+    <div class="wa-online-dot"></div>
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.463 3.48 11.815 11.815 0 0012.05 0z"/></svg>
+  </a>
+</div>
+
+<script>
+/* ── sticky nav blur ───────────────────── */
+addEventListener('scroll',()=>document.getElementById('nav').classList.toggle('scrolled',scrollY>40));
+
+/* ── mobile menu ───────────────────────── */
+const burger=document.getElementById('burger'), panel=document.getElementById('mobilePanel');
+burger.onclick=()=>{burger.classList.toggle('open');panel.classList.toggle('open');burger.setAttribute('aria-expanded',panel.classList.contains('open'))};
+panel.querySelectorAll('a').forEach(a=>a.onclick=()=>{burger.classList.remove('open');panel.classList.remove('open')});
+
+/* ── scroll reveal ─────────────────────── */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.12,rootMargin:'0px 0px -60px 0px'});
+document.querySelectorAll('.reveal,.reveal-l,.reveal-r').forEach(el=>io.observe(el));
+
+/* ── hero particles ────────────────────── */
+const pWrap=document.getElementById('particles');
+for(let i=0;i<22;i++){
+  const p=document.createElement('div');p.className='particle';
+  p.style.left=Math.random()*100+'%';p.style.bottom='0';
+  p.style.animationDuration=(8+Math.random()*10)+'s';
+  p.style.animationDelay=(Math.random()*10)+'s';
+  pWrap.appendChild(p);
+}
+
+/* ── payment flow animation ────────────── */
+const flowSteps=document.querySelectorAll('.flow-step'), flowFill=document.getElementById('flowFill');
+let flowIdx=0;
+function runFlow(){
+  flowSteps.forEach((s,i)=>s.classList.toggle('active',i<=flowIdx));
+  flowFill.style.width=(flowIdx/(flowSteps.length-1)*100)+'%';
+  flowIdx=(flowIdx+1)%(flowSteps.length+1);
+}
+const flowObserver=new IntersectionObserver(es=>{
+  if(es[0].isIntersecting){runFlow();window._flowInt=setInterval(runFlow,1300)}
+  else clearInterval(window._flowInt);
+},{threshold:.4});
+flowObserver.observe(document.getElementById('payFlow'));
+
+/* ── FAQ accordion ─────────────────────── */
+document.querySelectorAll('.faq-item').forEach(item=>{
+  const q=item.querySelector('.faq-q'), a=item.querySelector('.faq-a');
+  q.onclick=()=>{
+    const isOpen=item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(o=>{o.classList.remove('open');o.querySelector('.faq-a').style.maxHeight=null});
+    if(!isOpen){item.classList.add('open');a.style.maxHeight=a.scrollHeight+'px'}
+  };
+});
+
+/* ── Quiz logic ─────────────────────────── */
+(function(){
+  const qs=[...document.querySelectorAll('.quiz-q')];
+  const progress=document.getElementById('quizProgress');
+  const result=document.getElementById('quizResult');
+  let answers=[],current=0;
+
+  function showQ(i){
+    qs.forEach((q,idx)=>q.classList.toggle('active',idx===i));
+    progress.style.width=(i/qs.length*100)+'%';
+  }
+  showQ(0);
+
+  document.querySelectorAll('.quiz-opt').forEach(btn=>{
+    btn.onclick=()=>{
+      answers.push(parseInt(btn.dataset.v));
+      current++;
+      if(current<qs.length){showQ(current)}
+      else{
+        progress.style.width='100%';
+        qs[qs.length-1].classList.remove('active');
+        showResult();
+      }
+    };
+  });
+
+  function showResult(){
+    result.classList.add('active');
+    const score=answers.reduce((a,b)=>a+b,0);
+    const pct=Math.round(score/5*100);
+    const circle=document.getElementById('scoreCircle');
+    const circumference=377;
+    circle.style.transition='stroke-dashoffset 1.2s cubic-bezier(.16,1,.3,1)';
+    setTimeout(()=>{circle.style.strokeDashoffset=circumference-(circumference*pct/100)},100);
+
+    let n=0;
+    const numEl=document.getElementById('scoreNum');
+    const numInt=setInterval(()=>{n+=4;if(n>=pct){n=pct;clearInterval(numInt)}numEl.textContent=n+'%'},25);
+
+    const verdict=document.getElementById('quizVerdict');
+    const body=document.getElementById('quizVerdictBody');
+    let msg='';
+    if(pct<=20){
+      verdict.textContent='Nível Digital: Crítico';
+      body.textContent='O teu negócio está a operar quase totalmente sem sistema digital. É exactamente aqui que perdes mais dinheiro sem perceber. Vale a pena começar agora.';
+      msg='Crítico (1/5)';
+    } else if(pct<=40){
+      verdict.textContent='Nível Digital: Inicial';
+      body.textContent='Já tens alguma organização, mas faltam peças importantes. Um sistema completo eliminaria a maior parte das fugas de controlo que ainda tens.';
+      msg='Inicial (2/5)';
+    } else if(pct<=60){
+      verdict.textContent='Nível Digital: Em Desenvolvimento';
+      body.textContent='Estás no caminho certo, mas ainda há processos manuais que travam o crescimento. Um diagnóstico vai mostrar exactamente onde ganhar mais tempo e controlo.';
+      msg='Em Desenvolvimento (3/5)';
+    } else if(pct<=80){
+      verdict.textContent='Nível Digital: Avançado';
+      body.textContent='O teu negócio já usa boas práticas digitais. Falta pouco para teres controlo total e automatizado em todas as áreas.';
+      msg='Avançado (4/5)';
+    } else {
+      verdict.textContent='Nível Digital: Optimizado';
+      body.textContent='Excelente! O teu negócio já opera num nível digital elevado. Podemos ajudar a afinar e escalar o que já tens.';
+      msg='Optimizado (5/5)';
+    }
+
+    const cta=document.getElementById('quizCta');
+    const waMsg=encodeURIComponent(`Olá INGUAN. Fiz o diagnóstico digital e o meu resultado foi: ${msg} (${pct}%). Quero receber o diagnóstico gratuito completo para o meu negócio.`);
+    cta.href=`https://wa.me/258867247092?text=${waMsg}`;
+  }
+})();
+
+/* ── Lead form → WhatsApp ──────────────── */
+document.getElementById('leadForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  const nome=document.getElementById('f-nome').value;
+  const empresa=document.getElementById('f-empresa').value;
+  const tel=document.getElementById('f-tel').value;
+  const email=document.getElementById('f-email').value;
+  const problema=document.getElementById('f-problema').value;
+  const msg=`Olá INGUAN. Gostaria de solicitar um diagnóstico.\n\nNome: ${nome}\nEmpresa: ${empresa}\nTelefone: ${tel}\nEmail: ${email||'—'}\n\nProblema principal:\n${problema}`;
+  window.open(`https://wa.me/258867247092?text=${encodeURIComponent(msg)}`,'_blank');
+});
+</script>
+</body>
+</html>
